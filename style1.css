@@ -10,6 +10,7 @@ body{
 }
 /* latihan 1 */
 .container-satu{
+    display: flex;
     width: 800px;
     margin: 50px auto;
     background-color: #fff;
