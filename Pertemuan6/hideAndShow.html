@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="hideAndShow.css">
+    <script src="jquery-3.7.1.js"></script>
+    <script>
+        $(document).ready(function() {
+            $(".tombol1").click(function() {
+                $(".kotak").hide();
+            });
+            $(".tombol2").click(function() {
+                $(".kotak").show();
+            });
+            $(".tombol3").click(function() {
+                $("#kotak1").fadeOut();
+                $("#kotak2").fadeOut("slow");
+                $("#kotak3").fadeOut(3000);
+            });
+            $(".tombol4").click(function() {
+                $("#kotak1").fadeIn();
+                $("#kotak2").fadeIn("slow");
+                $("#kotak3").fadeIn(3000);
+            });
+            $(".tombol5").click(function() {
+                $("#kotak1").fadeTo("slow", 0.15);
+                $("#kotak2").fadeTo("slow", 0.4);
+                $("#kotak3").fadeTo("slow", 0.7);
+            });
+        });
+    </script>
+</head>
+<body>
+    <p>jQuery Effect</p>
+    <div id="kotak1" class="kotak"></div>
+    <br><br>
+    <div id="kotak2" class="kotak"></div>
+    <br><br>
+    <div id="kotak3" class="kotak"></div>
+    <br><br>
+    <button class="tombol1">Sembunyikan</button>
+    <button class="tombol2">Tampilkan</button>
+    <button class="tombol3">Fade Out</button>
+    <button class="tombol4">Fade In</button>
+    <button class="tombol5">Fade To</button>
+</body>
+</html>
