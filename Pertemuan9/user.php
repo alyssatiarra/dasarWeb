@@ -12,13 +12,14 @@ $conn = mysqli_connect($servername, $username, $password, $database);
 //     password varchar(50) not null)";
 
 // insert data
-$queryInsert = "INSERT INTO user (id, username, password) VALUES (1, 'admin', MD5('123'))";
+// $queryInsert = "INSERT INTO user (id, username, password) VALUES (1, 'admin', MD5('123'))";
 
-if(mysqli_query($conn, $queryInsert)){
-    echo "Data berhasil ditambah";
-} else {
-    echo "Error: " . mysqli_error($conn);
+// if(mysqli_query($conn, $queryInsert)){
+//     echo "Data berhasil ditambah";
+// } else {
+//     echo "Error: " . mysqli_error($conn);
+// }
+if(!$conn){
+    die("Koneksi gagal");
 }
-
-mysqli_close($conn);
 ?>
