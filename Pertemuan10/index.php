@@ -30,7 +30,7 @@
                         $kelamin = ($row["jenis_kelamin"] === 'L' ? 'Laki-laki':'Perempuan');
                         echo "  <tr>
                                 <td>" . $no++ . "</td> <td>" . $row["nama"] . "</td>
-                                <td>" . $kelamin . "</td> <td>" . $row["alamat"] / "</td>
+                                <td>" . $kelamin . "</td> <td>" . $row["alamat"] . "</td>
                                 <td>" . $row["no_telp"] . "</td>
                                 <td> <a href ='#' onclick='konfirmasiHapus(" . $row["id"] . ", \"" . $row["nama"] . "\") '>Hapus</a> </td>
                                 </tr>";
