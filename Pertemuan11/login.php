@@ -16,10 +16,10 @@
         <meta name="genetaror" content="Hugo 0.118.2">
         <title>Aplikasi Kantor Siapa</title>
         <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/sign-in/">
+
         <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@docsearch/css@3">
         <link rel="icon" href="assets/img/favicons/favicon.ico">
-        <link href="assets/dist/css/bootstrap-grid.min.css" rel="stylesheet">
-
+        <link href="assets/dist/css/bootstrap.min.css" rel="stylesheet">
         <style>
             .bd-placeholder-img{
                 font-size: 1.125rem;
