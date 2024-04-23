@@ -13,7 +13,7 @@
         <?php
         include('koneksi.php');
         $no = 1;
-        $query = "SELECT * FROM anggota ORDER BY id DESC";
+        $query = "SELECT * FROM anggota2 ORDER BY id DESC";
         $sql = $dbl->prepare($query);
         $sql->execute();
         $res1 = $sql->get_result();
